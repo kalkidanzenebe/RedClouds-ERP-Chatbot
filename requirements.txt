@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+langchain
+langchain-community
+huggingface-hub
+chromadb
+sentence-transformers
+psycopg2-binary
+pandas
+python-dotenv
+tqdm
+langchain-core
+pydantic
+Ollama

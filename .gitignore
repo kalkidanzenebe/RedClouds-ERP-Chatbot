@@ -1,0 +1,54 @@
+# Python virtual environment
+/venv/
+*.pyc
+__pycache__/
+*.egg-info/
+.pytest_cache/
+
+# Node modules
+/frontend-vite/node_modules/
+/node_modules/
+
+# Environment variables
+.env
+.env.*
+.flaskenv
+
+# IDE-specific files (Visual Studio, VS Code, IntelliJ, etc.)
+.vs/                     # For Visual Studio workspace files
+# Specific VS files often found directly under .vs/ or .vs/<solution-name>/v17
+.vs/*.json
+.vs/erp_chatbot/         # To catch specific project-related .vs files
+.vs/*/FileContentIndex/  # To catch the FileContentIndex
+*.wsuo                   # VS Workspace user options
+*.code-workspace         # VS Code workspace
+.idea/                   # For IntelliJ/PyCharm
+*.sublime-project
+*.sublime-workspace
+Thumbs.db
+
+# macOS files
+.DS_Store
+
+# Frontend build output
+/frontend-vite/dist/
+/dist/
+
+# Database/Vector Store persistence directories
+/chroma_db/              # If you used this path for ChromaDB
+/backend/chroma_data/    # Based on your git ls-files output
+*.sqlite                 # General rule for sqlite databases (e.g., .vs/slnx.sqlite, chroma.sqlite3)
+*.db                     # General rule for .db files (e.g., .vs/erp_chatbot/v17/Browse.VC.db)
+
+# Cached files and generated data
+.cache/
+
+# Large model files
+/models/                 # To ignore the entire models directory
+*.gguf                   # Specific GGUF model files (if outside models/)
+
+# Log files
+*.log
+
+# Dependency lock files (optional, depends on team preference, but often ignored)
+package-lock.json        # For npm/yarn
