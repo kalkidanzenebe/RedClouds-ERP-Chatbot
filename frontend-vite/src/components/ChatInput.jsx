@@ -19,21 +19,21 @@ function ChatInput({ onSendMessage, isLoading }) {
       </label>
       <input
         type="text"
-        id={inputId} // Assign the ID to the input field
+        id={inputId}
         value={inputText}
         onChange={(e) =>
           e.target.value.length <= 500 && setInputText(e.target.value)
-        } // Added character limit
+        }
         placeholder="Type your message..."
-        // Input field - Dark background, light text, neon blue focus ring
-        className="flex-1 p-3 border border-gray-700 bg-gray-800 text-gray-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition shadow-sm"
+        // Border and focus ring use header color (cyan)
+        className="flex-1 p-3 border border-cyan-800 bg-gray-800 text-gray-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-600 transition shadow-sm"
         disabled={isLoading}
-        maxLength={500} // HTML attribute for character limit
+        maxLength={500}
       />
       <button
         type="submit"
-        // Send button - Neon blue background
-        className="p-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-md transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-blue-500"
+        // Send button uses header color (cyan)
+        className="p-3 bg-cyan-800 hover:bg-cyan-900 text-white rounded-xl shadow-md transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-cyan-600"
         disabled={isLoading || !inputText.trim()}
         aria-label="Send message"
       >

@@ -186,6 +186,17 @@ function ChatModal({ onClose }) {
             isSidebarOpen ? "md:ml-0" : "md:ml-0"
           }`}
         >
+          {/* X button to close modal */}
+          {/* X button to close modal */}
+          <button
+            onClick={onClose}
+            className="absolute top-3 right-3 p-2 rounded-full bg-gradient-to-r from-cyan-900 via-gray-900 to-cyan-800 bg-opacity-90 hover:bg-cyan-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-cyan-400 transition z-20 shadow-lg"
+            aria-label="Close chat"
+            title="Close"
+            type="button"
+          >
+            <X size={24} />
+          </button>
           <div className="flex items-center justify-between p-4 bg-gradient-to-r from-gray-800 to-gray-950 text-cyan-400 shadow-md">
             {!isSidebarOpen ? (
               <button
@@ -201,6 +212,7 @@ function ChatModal({ onClose }) {
             <h2 className="text-2xl font-bold tracking-tight">
               RedClouds AI Assistant
             </h2>
+
             <div className="w-10"></div>
           </div>
 

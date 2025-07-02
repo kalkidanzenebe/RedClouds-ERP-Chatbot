@@ -3,8 +3,8 @@ import React from "react";
 function MessageBubble({ message, onSendMessage }) {
   const isUser = message.type === "user";
   const bubbleColorClass = isUser
-    ? "bg-blue-600 text-white rounded-br-none" // User message: vibrant blue background
-    : "bg-gray-800 text-gray-100 rounded-bl-none"; // Bot message: dark gray background, light text
+    ? "bg-cyan-700 text-white rounded-br-none" // User message: darker cyan background, white text
+    : "bg-gray-800 text-gray-100 rounded-bl-none"; // Bot message
 
   return (
     <div
